@@ -1,0 +1,64 @@
+= Course Setup for 510G Android
+
+This directory tries to automate the setup as much as possible.
+
+It runs one PowerShell script, so you MUST first run PowerShell as Administrator,
+and give the input
+
+	set-executionpolicy RemoteSigned
+
+AND accept the resulting prompt with a Yes.
+If you don't do this, PowerShell will say it doesn't recognize SetPaths.ps1 as a script.
+
+= Structure
+
+I have configured this for the following overall setup - these will be added
+to each student's directory:
+
+CourseFiles510G - exercises, solutions, samples
+
+Downloads/... - downloads for installing programs for later chapters
+	so the students can learn to set these up
+
+bin - a few shell scripts/batch files
+
+lib - a few Java Jar files etc.
+
+javasrc - extra Java samples that we might refer to in response to questions
+
+AndroidCookbookExamples - extra Android examples that might be used
+
+
+= Assumptions
+
+We presume that:
+
+	The student machines have Windows 10/11
+
+	The student machines have the git-bash (MinGW) package installed and on PATH
+
+	The student machines have 'Windows Terminal" to use instead of cmd.exe
+		(The setup doesn't demand this, but it is highly recommended)
+
+	The student machines have Python 3.10 installed standardly
+	(so that "pip install" will work).
+
+	The student machines have "winget" installed (it was optional on some early Win10).
+
+The setup1 path is a batch script using:
+
+	WinGet to install java, intellij idea, android studio
+
+	git to install CourseFiles510G, javasrc, Android-Cookbook-Examples
+
+	curl to download a few files
+
+	tar to extract bin, lib, Downloads, Maven
+
+	powershell SetPaths.ps1 to set the PATH for some programs that need it
+
+= Summary
+
+This will stitch together all the files needed for the course.
+
+Comments/Questions?

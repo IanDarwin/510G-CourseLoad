@@ -1,0 +1,70 @@
+Application Software:
+Course load runs on Windows or Linux (Ubuntu provided by the Lab)
+But: Linux Emulator performance under Linux is unacceptable
+
+Dev Tools
+	Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains IntelliJ with extra plugins)
+		https://developer.android.com/download - Chipmunk 2021.2.1 
+		Had to hand-craft a startup script since IntelliJ STILL CANNOT HACK JAVA > 11!!! Saved in 'scripts'
+		Later found could have used winget install --id Google.AndroidStudio
+		Did first to see if Emulator worked.
+	Android SDK, tools, emulators - downloaded when starting up Studio first time
+	Flutter SDK - latest - from https://flutter.dev/
+	Flutter plugin for Android Studio - via Studio Settings->Plugins
+	Misc Tools:
+		git in "git bash" via winget install --id Git.Git -e
+		maven build tool, downloaded from https://maven.apache.org/download
+	Java JDK 11 LTS - needed for older releases
+		winget install --id EclipseAdoptium.Temurin.11
+	Java JDK 17 LTS - free from numerous OpenJDK download sites
+		winget install --id EclipseAdoptium.Temurin.17
+	Eclipse Java IDE (Ch02) - free from Eclipse Software Foundation
+		https://www.eclipse.org/downloads/packages/ ran installer (annoyingly many steps)
+	PATH set to:
+		PATH=C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin
+		C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\bin
+		C:\Program Files\Git\cmd
+		C:\Program Files\Git\usr\bin
+		C:\Users\student\apache-maven-3.8.5\bin
+		C:\WINDOWS\system32
+		C:\WINDOWS
+		C:\WINDOWS\System32\Wbem
+		C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+		C:\WINDOWS\System32\OpenSSH\
+		C:\Users\student\bin
+		C:\Users\student\AppData\Local\Android\Sdk\tools\bin
+		C:\Users\student\AppData\Local\Microsoft\WindowsApps
+		C:\Users\student\flutter\bin
+	Put BOTH .../Android/Sdk/tools/bin and ...Android/Sdk/platform-tools on path
+	Eg on Windows
+		%USERPROFILE%\APpData\Local\Android\Sdk\tools\bin
+		%USERPROFILE%\APpData\Local\Android\Sdk\platform-tools
+
+Miscellaneous downloads - in Course510G/Downloads (only part of Course510G that's not in my git repo - too big).
+	addonsu 16.0 from https://download.lineageos.org/extras
+	apktool 2.6.1 from https://bitbucket.org/iBotPeaches/apktool/downloads/
+	BurpSuite v2022_03_08 Community Edn from https://portswigger.net/burp/releases/professional-community-2022-3-8
+	Frida - Installed dynamically, using "pip install frida-tools" - see https://frida.re/docs/installation
+	Ghidra 10.1.4 from https://github.com/NationalSecurityAgency/ghidra/releases
+	jadx 1.4.0 from https://github.com/skylot/jadx
+	jd-gui 1.6.6 from http://java-decompiler.github.io
+	jtrace unversioned from http://newandroidbook.com/tools/jtrace.html
+	magisk 24.3 from https://github.com/topjohnwu/Magisk/releases
+	smali 2.5.2 from https://bitbucket.org/JesusFreke/smali/downloads/
+	sqlite3 3380500 from https://www.sqlite.org/download.html 
+
+Documentation
+	Android Internals book first edition, free download from http://newandroidbook.com/vault7.htm. Used with permission.
+
+Sample Code:
+	JavaSrc - course author's open-source Java demo package https://github.com/IanDarwin/javasrc
+	AndroidCookbookExamples - course author's open-source Android demos https://github.com/IanDarwin/Android-Cookbook-Examples
+
+Problems and Solutions, and a few demos 
+	CourseFiles510G, see Origins spreadsheet - private git rep
+	expenses-server - from course author, to upload expenses for Expenses app  https://github.com/IanDarwin/expenses-server
+
+Tools used in preparing the course load
+	Make (gnu-make) - winget install --id GnuWin32.Make
+	makehandson, by Ian Darwin, creates hands-ons from solutions, at https://github.com/IanDarwin/makehandsons
+	CreateProjects, by Ian Darwin, sets up Eclipse projects, at https://github.com/IanDarwin/CreateProjects
