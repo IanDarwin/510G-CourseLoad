@@ -10,7 +10,10 @@ Write-Host "SetPaths run on" $Today
 $pathsArray = 
 	"C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin",
 	"C:\Users\student\apache-maven-3.8.5\bin",
-	"C:\Users\student\bin"
+	"C:\Users\student\bin",
+	"C:\Users\student\AppData\Local\Android\Sdk\tools\bin",
+	"C:\Users\student\AppData\Local\Android\Sdk\emulator",
+	"C:\Users\student\AppData\Local\Android\Sdk\platform-tools",
 	"C:\Users\student\flutter\bin"
 
 function Add-To-Path{

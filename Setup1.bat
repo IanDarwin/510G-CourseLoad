@@ -1,5 +1,7 @@
 REM Androd Module: Installs Part One 
 
+REM Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
+winget install --id Microsoft.WindowsTerminal
 REM Java JDK 11 LTS - needed for older releases 3rd-party apps
 winget install --id EclipseAdoptium.Temurin.11
 REM Java JDK 17 LTS - free from numerous OpenJDK download sites
@@ -32,12 +34,6 @@ Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.htm
 
 rem Now that files are downloaded, we can set the PATH
 powershell SetPaths.ps1
-
-	C:\Program Files (x86)\mitmproxy\bin
-	%USERPROFILE%\AppData\Local\Android\Sdk\tools\bin
-	%USERPROFILE%\AppData\Local\Android\Sdk\emulator
-	%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
-	%USERPROFILE%\flutter\bin
 
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
