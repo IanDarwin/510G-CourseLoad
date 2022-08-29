@@ -1,0 +1,25 @@
+= ORIGINS
+
+This doc lists the origins of Miscellaneous downloads - saved in the students' Downloads folder
+
+Most are not readily linkable so we give URL and our latest version number
+
+addonsu 16.0 - https://download.lineageos.org/extras
+apache-maven-3.8.4-bin.tar.gz https://maven.apache.org/
+apktool 2.6.1 - https://bitbucket.org/iBotPeaches/apktool/downloads/
+dex2jar-2.1.zip - https://github.com/pxb1988/dex2jar
+dextra.tar - http://www.newandroidbook.com/tools/dextra.html
+Frida - Installed dynamically, using "pip install frida-tools" - see https://frida.re/docs/installation
+Frida Android Binaries - - https://frida.re
+ghidra_10.1.5_PUBLIC_20220726.zip - https://github.com/NationalSecurityAgency/ghidra/releases
+jadx 1.4.0 - https://github.com/skylot/jadx
+jd-gui-windows-1.6.6.zip - http://java-decompiler.github.io- http://java-decompiler.github.io
+jnject.c - http://www.newandroidbook.com/
+jtrace unversioned - http://newandroidbook.com/tools/jtrace.html
+Magisk-v25.2.apk -  https://github.com/topjohnwu/Magisk/releases
+mitmproxy-8.1.1-windows-x64-installer.exe from https://mitmproxy.org
+smali_2.5.2.jar - https://bitbucket.org/JesusFreke/smali/downloads/
+sqlite3 3380500 - https://www.sqlite.org/download.html 
+UnCrackable-Level?.apk - https://owasp.org
+validate.arm.elf - with the Uncrackables
+r2pay-v1.0.apk - with the Uncrackables
