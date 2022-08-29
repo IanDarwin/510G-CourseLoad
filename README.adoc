@@ -10,6 +10,15 @@ and give the input
 AND accept the resulting prompt with a Yes.
 If you don't do this, PowerShell will say it doesn't recognize SetPaths.ps1 as a script.
 
+== TO USE
+
+* Open https://github.com/IanDarwin/510G-CourseLoad in a browser.
+* Click on Setup1.bat
+* Click "Raw" button
+* CTRL/S or File->SaveAs, saves as Setup1.bat.txt, rename to Setup1.bat
+* Run it: Setup1
+
+
 == Structure
 
 I have configured this for the following overall setup - these will be added
