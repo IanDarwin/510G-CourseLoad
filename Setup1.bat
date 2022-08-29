@@ -16,6 +16,9 @@ REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains Int
 winget install --id Google.AndroidStudio
 REM Android SDK, tools, emulators - downloaded when starting up Studio first time
 
+REM Set PATHs early, because paths.
+powershell SetPaths.ps1
+
 REM XXX Flutter SDK - latest - from https://flutter.dev/
 curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
 unzip flutter.zip
@@ -39,8 +42,6 @@ tar xzf apache-maven-3.8.6-bin.tar.gz
 echo Task that must be done by hand (for now)
 echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
 
-rem Now that files are downloaded, we can set the PATH
-powershell SetPaths.ps1
 
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
