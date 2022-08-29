@@ -1,8 +1,10 @@
 = ORIGINS
 
-This doc lists the origins of Miscellaneous downloads - saved in the students' Downloads folder
+This doc lists the origins of the files we install into the students' Download folders.
 
-Most are not readily linkable so we give URL and our latest version number
+N.B. See also Setup1.bat which downloads files from various other places!
+
+Many are not readily linkable so we give URL and our latest version number
 
 addonsu 16.0 - https://download.lineageos.org/extras
 apache-maven-3.8.4-bin.tar.gz https://maven.apache.org/
@@ -21,5 +23,5 @@ mitmproxy-8.1.1-windows-x64-installer.exe from https://mitmproxy.org
 smali_2.5.2.jar - https://bitbucket.org/JesusFreke/smali/downloads/
 sqlite3 3380500 - https://www.sqlite.org/download.html 
 UnCrackable-Level?.apk - https://owasp.org
-validate.arm.elf - with the Uncrackables
-r2pay-v1.0.apk - with the Uncrackables
+	validate.arm.elf - with the Uncrackables
+	r2pay-v1.0.apk - with the Uncrackables

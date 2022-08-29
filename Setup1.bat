@@ -39,7 +39,7 @@ powershell SetPaths.ps1
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
 REM SEE http://newandroidbook.com/vault7.htm. 
-curl -o Downloads/InternalsBookVol1FirstEdn.pdf http://newandroidbook.com/AIvI-M-RL1.pdf
+curl -o Documents/LevinInternalsBookVol1FirstEdn.pdf http://newandroidbook.com/AIvI-M-RL1.pdf
 
 REM Sample Code:
 REM JavaSrc - course author's open-source Java demo package 
