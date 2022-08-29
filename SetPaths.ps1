@@ -14,7 +14,8 @@ $pathsArray =
 	"C:\Users\student\AppData\Local\Android\Sdk\tools\bin",
 	"C:\Users\student\AppData\Local\Android\Sdk\emulator",
 	"C:\Users\student\AppData\Local\Android\Sdk\platform-tools",
-	"C:\Users\student\flutter\bin"
+	"C:\Users\student\flutter\bin",
+	"C:\Program Files (x86)\GnuWin32\bin"
 
 function Add-To-Path{
 param(
