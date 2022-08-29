@@ -30,7 +30,8 @@ echo Downloading maven build tool from https://maven.apache.org/download
 curl -O https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 tar xzf apache-maven-3.8.6-bin.tar.gz
 
-Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
+echo Task that must be done by hand (for now)
+echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
 
 rem Now that files are downloaded, we can set the PATH
 powershell SetPaths.ps1
@@ -38,7 +39,7 @@ powershell SetPaths.ps1
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
 REM SEE http://newandroidbook.com/vault7.htm. 
-curl -o InternalsBookVol1FirstEdn.pdf http://newandroidbook.com/AIvI-M-RL1.pdf
+curl -o Downloads/InternalsBookVol1FirstEdn.pdf http://newandroidbook.com/AIvI-M-RL1.pdf
 
 REM Sample Code:
 REM JavaSrc - course author's open-source Java demo package 
@@ -52,4 +53,7 @@ REM Chapter 3 Expenses-server - from course author, to upload expenses for Expen
 git clone https://github.com/IanDarwin/expenses-server
 rem Pre-fetch a bunch ("half the internet") of dependencies for Spring-boot server
 mvn -f expenses-server compile
+
+REM Grand finale: download a tranche of files in non-git format
+curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
 
