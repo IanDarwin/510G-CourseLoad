@@ -28,14 +28,13 @@ to each student's directory:
 We presume that:
 
 * The student machines have Windows 10/11
-* The student machines have the git-bash (MinGW) package installed and on PATH
-* The student machines have 'Windows Terminal" to use instead of cmd.exe (The setup doesn't demand this, but it is highly recommended)
-* The student machines have Python 3.10 installed standardly (so that "pip install" will work).
 * The student machines have "winget" installed (it was optional on some early Win10).
+* The student machines have the git-bash (MinGW) package installed and on PATH
+* The student machines have recent Python 3 installed standardly (so that "pip install" will work).
 
 The Setup1 file is a batch script using:
 
-* WinGet to install java, intellij idea, android studio
+* WinGet to install java, intellij idea, android studio, etc
 * git to install CourseFiles510G, javasrc, Android-Cookbook-Examples
 * curl to download a few files
 * tar to extract bin, lib, Downloads, Maven
@@ -43,6 +42,6 @@ The Setup1 file is a batch script using:
 
 == Summary
 
-This will stitch together all the files needed for the course.
+The Setup1 script will stitch together all the files needed for the course.
 
 Comments/Questions?
