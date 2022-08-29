@@ -1,11 +1,15 @@
 REM Androd Module: Installs Part One 
+REM
+REM Make sure we start in ~
+
+cd %USERPROFILE%
 
 REM Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
 winget install --id Microsoft.WindowsTerminal
 REM Java JDK 11 LTS - needed for older releases 3rd-party apps
-winget install --id EclipseAdoptium.Temurin.11
+winget install --id EclipseAdoptium.Temurin.11.JDK
 REM Java JDK 17 LTS - free from numerous OpenJDK download sites
-winget install --id EclipseAdoptium.Temurin.17
+winget install --id EclipseAdoptium.Temurin.17.JDK
 REM IntelliJ java-only install
 winget install --id JetBrains.IntelliJIDEA.Community
 REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains IntelliJ with extra plugins)
@@ -13,8 +17,8 @@ winget install --id Google.AndroidStudio
 REM Android SDK, tools, emulators - downloaded when starting up Studio first time
 
 
-Flutter SDK - latest - from https://flutter.dev/
-Flutter plugin for Android Studio - via Studio Settings->Plugins
+REM XXX Flutter SDK - latest - from https://flutter.dev/
+REM XXX Flutter plugin for Android Studio - via Studio Settings->Plugins
 
 REM Tools used in preparing the course load
 REM git (and bash shell) included in "git bash" 
