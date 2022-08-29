@@ -15,7 +15,8 @@ If you don't do this, PowerShell will say it doesn't recognize SetPaths.ps1 as a
 * Open https://github.com/IanDarwin/510G-CourseLoad in a browser.
 * Click on Setup1.bat
 * Click "Raw" button
-* CTRL/S or File->SaveAs, saves as Setup1.bat.txt, rename to Setup1.bat
+* CTRL/S or File->SaveAs, save in /Users/student, saves as Setup1.bat.txt, rename to Setup1.bat
+* Repeat for SetPaths.ps1 (that's p-s-one, not pumpkin spice latte)
 * Run it: Setup1
 
 
