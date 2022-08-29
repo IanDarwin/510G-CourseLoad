@@ -16,9 +16,11 @@ REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains Int
 winget install --id Google.AndroidStudio
 REM Android SDK, tools, emulators - downloaded when starting up Studio first time
 
-
 REM XXX Flutter SDK - latest - from https://flutter.dev/
-REM XXX Flutter plugin for Android Studio - via Studio Settings->Plugins
+curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
+unzip flutter.zip
+del   flutter.zip
+flutter doctor
 
 REM Tools used in preparing the course load
 REM git (and bash shell) included in "git bash" 
