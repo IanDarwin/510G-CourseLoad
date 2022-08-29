@@ -2,13 +2,16 @@
 
 This directory tries to automate the setup as much as possible.
 
+== BEFORE USE
+
 It runs one PowerShell script, so you MUST first run PowerShell as Administrator,
 and give the input
 
 	set-executionpolicy RemoteSigned
 
 AND accept the resulting prompt with a Yes.
-If you don't do this, PowerShell will say it doesn't recognize SetPaths.ps1 as a script.
+If you don't do this, PowerShell will say it can't find SetPaths.ps1 as a script,
+even if you say .\SetPaths.ps1
 
 == TO USE
 
