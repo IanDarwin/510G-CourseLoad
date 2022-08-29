@@ -55,6 +55,11 @@ git clone https://github.com/IanDarwin/Android-Cookbook-Examples
 
 REM Course Problems and Solutions, and a few demos 
 git clone https://github.com/IanDarwin/CourseFiles510G
+REM Generating exercise files from solutions
+cd CourseFiles510G
+make
+cd ..
+
 REM Chapter 3 Expenses-server - from course author, to upload expenses for Expenses app  
 git clone https://github.com/IanDarwin/expenses-server
 rem Pre-fetch a bunch ("half the internet") of dependencies for Spring-boot server
