@@ -4,23 +4,34 @@ This directory tries to automate the setup as much as possible.
 
 == TO CONFIGURE A STUDENT MACHINE
 
-* In a CMD window, download the script
+* In a PowerShell AS ADMIN window,  download the setpaths file:
 
-	cd %USERPROFILE%
-	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/setup.ps1
+	Start-BitsTransfer \
+		-Destination SetPaths.ps1 \
+		-Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
 
-* If the student logs in with a name other than 'student', edit the new file setup.ps1 and change globally, case-insensitively
-
-* In a PowerShell AS ADMIN window, allow running unsigned P/S scripts:
+* In the same window, allow running unsigned P/S scripts:
 
 	set-executionpolicy Unrestricted
 
-AND accept the resulting prompt with a Yes.
+	AND accept the resulting prompt in the affirmative!
 
-* In the same window, run the setup
+* In the same window, run the script to set paths
 
 	cd ~
-	.\setup.ps1
+	.\SetPaths.ps1
+	Note: this must be run or parts of the main script will fail
+
+* Start a NEW CMD window (must be new to get the PATH changes!), download the main setup script
+
+	cd %USERPROFILE%
+	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
+
+* If the student logs in with a name other than 'student', edit the new file setup.ps1 and change globally, case-insensitively
+
+* Run the script:
+
+	.\Setup1.bat
 
 * Come back when it's done, and complete the "manual steps" shown below.
 

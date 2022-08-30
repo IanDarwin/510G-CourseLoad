@@ -1,7 +1,6 @@
 REM Androd Module: Installs Part One 
-REM
-REM Make sure we start in ~
 
+REM Make sure we start in ~
 cd %USERPROFILE%
 
 REM Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
@@ -36,9 +35,6 @@ winget install --id Insecure.Nmap
 echo Downloading maven build tool from https://maven.apache.org/download
 curl -O https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 tar xzf apache-maven-3.8.6-bin.tar.gz
-
-REM Set PATHs here, because paths.
-powershell .\SetPaths.ps1
 
 echo Task that must be done by hand (for now)
 echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
