@@ -7,7 +7,6 @@ Note that some bits and pieces of Android Studio - like the Emulators and platfo
 cannot be downloaded automatically and must be downloaded by running Android Studio. We get the students to do this
 as part of an early exercise.
 
-
 == TO CONFIGURE A STUDENT MACHINE
 
 * Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
@@ -27,10 +26,11 @@ and change globally, case-insensitively from _student_ to their name.
 
 	cd ~
 	.\SetPaths.ps1
-	Note: this must be run or parts of the main script will fail
+	Note: this must be run, and succeed with only yellow or white outputs, no reds, else parts of the main script will fail
 
-* We need some of the tools that are downloaded to be usable during the script.
-Thus you *must* start a *new* CMD window (Not even a new tab within WinTerm;
+* We need some of the tools that are downloaded by the script to be usable while the script is running.
+And they are only made available by the PATH changes in SetPaths.
+Therefore you *must* start a *new* CMD window (Not even a new tab within WinTerm;
 must be a whole new process to get the PATH changes we just made!). 
 In this new window, download the main setup script:
 
@@ -48,9 +48,12 @@ and change globally, case-insensitively from _student_ to their name.
 
 	.\Setup1.bat
 
-* Watch for errors. After the first machine completes OK, on subsequent machines you can come back when it's done. 
-It took about 15 minutes on a fast, lightly-loaded network when developing the script.
-Remember to complete the "manual steps" shown at the end of the output.
+* Watch for errors. Errors installing or building anything are probably bad news.
+However, issues during the long and chatty JavaScript stage towards the end do not matter.
+
+After the first machine completes OK, on subsequent machines you can come back when it's done. 
+It took about 15-30 minutes on a fast, lightly-loaded network when developing the script.
+Please remember to complete the "manual steps" shown at the end of the output.
 
 == Structure
 
