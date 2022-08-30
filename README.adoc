@@ -29,7 +29,10 @@ and change globally, case-insensitively from _student_ to their name.
 	.\SetPaths.ps1
 	Note: this must be run or parts of the main script will fail
 
-* Start a NEW CMD window (must be new to get the PATH changes!), download the main setup script
+* We need some of the tools that are downloaded to be usable during the script.
+Thus you *must* start a *new* CMD window (Not even a new tab within WinTerm;
+must be a whole new process to get the PATH changes!). 
+In this new window, download the main setup script
 
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
