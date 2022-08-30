@@ -15,7 +15,8 @@ even if you say .\SetPaths.ps1
 
 == TO USE
 
-* curl -O https://github.com/IanDarwin/510G-CourseLoad/setup.ps1
+* curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/setup.ps1
+* (or download in a browser, save as, rename to get rid of hidden .txt extension)
 * Run it: powershell .\setup.ps1
 
 == Structure
