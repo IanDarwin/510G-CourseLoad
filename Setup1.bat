@@ -16,14 +16,12 @@ REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains Int
 winget install --id Google.AndroidStudio
 REM Android SDK, tools, emulators - downloaded when starting up Studio first time
 
-REM Set PATHs early, because paths.
-powershell SetPaths.ps1
-
-REM XXX Flutter SDK - latest - from https://flutter.dev/
+REM Flutter SDK - latest - from https://flutter.dev/
+REM IGNORE warnings about missing command-line tools
 curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
 unzip flutter.zip
 del   flutter.zip
-flutter doctor
+flutter\flutter doctor
 
 REM Tools used in preparing the course load
 REM git (and bash shell) included in "git bash" 
@@ -39,9 +37,11 @@ echo Downloading maven build tool from https://maven.apache.org/download
 curl -O https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 tar xzf apache-maven-3.8.6-bin.tar.gz
 
+REM Set PATHs here, because paths.
+powershell .\SetPaths.ps1
+
 echo Task that must be done by hand (for now)
 echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
-
 
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
