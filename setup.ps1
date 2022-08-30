@@ -18,8 +18,15 @@ Write-Host "Android Studio IDE (Ch03 to end) - free from Google (just JetBrains 
 winget install --id Google.AndroidStudio
 Write-Host Android SDK, tools, emulators - downloaded when starting up Studio first time
 
+function download() {
+param(
+	[string]$Url
+)
+	C:\Windows\System32\curl.exe -O $Url
+}
+
 Write-Host Flutter SDK - latest - from https://flutter.dev/
-curl -O "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip"
+download "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip"
 unzip flutter_windows_3.0.5-stable.zip
 del   flutter_windows_3.0.5-stable.zip
 Write-Host IGNORE warnings about missing command-line tools
@@ -36,7 +43,7 @@ Write-Host nmap just for ncat
 winget install --id Insecure.Nmap
 
 Write-Host maven build tool from https://maven.apache.org/download
-curl -O https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+download https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 tar xzf apache-maven-3.8.6-bin.tar.gz
 
 Write-Host Set PATHs here, because paths.
@@ -63,7 +70,7 @@ param(
 
 	if (!(Test-Path $Dir)) {
 		Write-warning "Supplied directory $Dir was not found!"
-		return
+		# return
 	}
 	$PATH = [Environment]::GetEnvironmentVariable("PATH", "Machine")
 	if ($PATH -notlike "*$Dir*" ) {
@@ -85,7 +92,8 @@ Write-Host Set All Browser Home Pages to C:/Users/student/CourseFiles510G/websit
 Write-Host Documentation
 Write-Host Android Internals book first edition, free download, Used with permission.
 Write-Host SEE http://newandroidbook.com/vault7.htm. 
-curl -o Documents/LevinInternalsBookVol1FirstEdn.pdf http://newandroidbook.com/AIvI-M-RL1.pdf
+download http://newandroidbook.com/AIvI-M-RL1.pdf
+rename AIvI-M-RL1.pdf Documents/LevinInternalsBookVol1FirstEdn.pdf
 
 Write-Host Sample Code:
 Write-Host "JavaSrc - course author's open-source Java demo package"
@@ -106,7 +114,9 @@ Write-Host Pre-fetch a bunch ("half the internet") of dependencies for Spring-bo
 mvn -f expenses-server compile
 
 Write-Host Grand finale: download a tranche of files in non-git format
-curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
+download https://darwinsys.com/tmp/Tilde510G.tgz
+tar xzf Tilde510G.tgz
+delete  Tilde510G.tgz
 
 Write-Host "Tha-Tha-Tha-That's all folks!"
 
