@@ -15,13 +15,9 @@ even if you say .\SetPaths.ps1
 
 == TO USE
 
-* Open https://github.com/IanDarwin/510G-CourseLoad in a browser.
-* Click on Setup1.bat
-* Click "Raw" button
-* CTRL/S or File->SaveAs, save in /Users/student, saves as Setup1.bat.txt, rename to Setup1.bat
-* Repeat for SetPaths.ps1 (that's p-s-one, not pumpkin spice latte)
+* curl -o Setup1.bat  https://github.com/IanDarwin/510G-CourseLoad/Setup1.bat
+* curl -o SetPaths.ps1  https://github.com/IanDarwin/510G-CourseLoad/SetPaths.ps1
 * Run it: Setup1
-
 
 == Structure
 
