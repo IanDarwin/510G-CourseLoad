@@ -108,7 +108,7 @@ cd ..
 Write-Host "Chapter 3 Expenses-server - from course author, to upload expenses for Expenses app"
 git clone https://github.com/IanDarwin/expenses-server
 Write-Host Pre-fetch a bunch ("half the internet") of dependencies for Spring-boot server
-mvn -f expenses-server compile
+mvn -f expenses-server/pom.xml compile
 
 Write-Host Grand finale: download a tranche of files in non-git format
 download https://darwinsys.com/tmp/Tilde510G.tgz

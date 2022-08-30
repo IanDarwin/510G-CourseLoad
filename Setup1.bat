@@ -55,7 +55,7 @@ cd ..
 REM Chapter 3 Expenses-server - from course author, to upload expenses for Expenses app  
 git clone https://github.com/IanDarwin/expenses-server
 rem Pre-fetch a bunch ("half the internet") of dependencies for Spring-boot server
-mvn -f expenses-server compile
+mvn -f expenses-server/pom.xml compile
 
 REM Grand finale: download a tranche of files in non-git format
 curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -

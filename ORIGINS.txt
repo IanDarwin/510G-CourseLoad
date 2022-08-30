@@ -7,7 +7,7 @@ N.B. See also Setup1.bat which downloads files from various other places!
 Many are not readily linkable so we give URL and our latest version number
 
 addonsu 16.0 - https://download.lineageos.org/extras
-apache-maven-3.8.4-bin.tar.gz https://maven.apache.org/
+apache-maven-3.8.X-bin.tar.gz https://maven.apache.org/
 apktool 2.6.1 - https://bitbucket.org/iBotPeaches/apktool/downloads/
 dex2jar-2.1.zip - https://github.com/pxb1988/dex2jar
 dextra.tar - http://www.newandroidbook.com/tools/dextra.html
