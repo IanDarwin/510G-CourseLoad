@@ -7,7 +7,7 @@ This directory tries to automate the setup as much as possible.
 It runs one PowerShell script, so you MUST first run PowerShell as Administrator,
 and give the input
 
-	set-executionpolicy RemoteSigned
+	set-executionpolicy Unrestricted
 
 AND accept the resulting prompt with a Yes.
 If you don't do this, PowerShell will say it can't find SetPaths.ps1 as a script,
