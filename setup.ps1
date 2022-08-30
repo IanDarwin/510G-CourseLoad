@@ -1,9 +1,9 @@
-Write-Host Android Module: Installation of files & software
+Write-Host "Android Module: Installation of files & software"
 
 $Today = (Get-Date).DateTime
 Write-Host "Setup started at" $Today
 
-REM Make sure we start in right place
+# Make sure we start in right place
 cd ~
 
 Write-Host Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
@@ -14,15 +14,15 @@ Write-Host Java JDK 17 LTS - free from numerous OpenJDK download sites
 winget install --id EclipseAdoptium.Temurin.17.JDK
 Write-Host IntelliJ java-only install
 winget install --id JetBrains.IntelliJIDEA.Community
-Write-Host Android Studio IDE (Ch03 to end) - free from Google (just JetBrains IntelliJ with extra plugins)
+Write-Host "Android Studio IDE (Ch03 to end) - free from Google (just JetBrains IntelliJ with extra plugins)"
 winget install --id Google.AndroidStudio
 Write-Host Android SDK, tools, emulators - downloaded when starting up Studio first time
 
 Write-Host Flutter SDK - latest - from https://flutter.dev/
+curl -O "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip"
+unzip flutter_windows_3.0.5-stable.zip
+del   flutter_windows_3.0.5-stable.zip
 Write-Host IGNORE warnings about missing command-line tools
-curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
-unzip flutter.zip
-del   flutter.zip
 flutter\flutter doctor
 
 Write-Host Tools used in preparing the course load
