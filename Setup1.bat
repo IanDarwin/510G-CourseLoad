@@ -23,8 +23,6 @@ del   flutter.zip
 flutter\flutter doctor
 
 REM Tools used in preparing the course load
-REM git (and bash shell) included in "git bash" 
-winget install --id Git.Git -e
 REM Make (gnu-make) - 
 winget install --id GnuWin32.Make
 REM mitmproxy for Chap 7
@@ -33,11 +31,8 @@ REM nmap just for ncat
 winget install --id Insecure.Nmap
 
 echo Downloading maven build tool from https://maven.apache.org/download
-curl -O https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-tar xzf apache-maven-3.8.6-bin.tar.gz
+curl https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz | tar xzf -
 
-echo Task that must be done by hand (for now)
-echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
 
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.
@@ -68,4 +63,4 @@ curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
 REM Tha-Tha-Tha-That's all folks!
 
 REM Remember there are a few manual steps needed, see the README.
-
+echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html

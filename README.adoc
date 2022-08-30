@@ -29,11 +29,16 @@ This directory tries to automate the setup as much as possible.
 
 * If the student logs in with a name other than 'student', edit the new file setup.ps1 and change globally, case-insensitively
 
-* Run the script:
+* Unless you are sure that Git Bash (MinGW) is installed:
+
+	winget install --id Git.Git -e
+
+* Run the main script:
 
 	.\Setup1.bat
 
-* Come back when it's done, and complete the "manual steps" shown below.
+* Watch for errors. After the first one, you can come back when it's done. 
+Remember to complete the "manual steps" shown at the end of the output.
 
 == Structure
 
@@ -59,13 +64,12 @@ We presume that:
 * The student machines have the git-bash (MinGW) package installed and on PATH
 * The student machines have recent Python 3 installed standardly (so that "pip install" will work).
 
-The setup.ps1 file is a PowerShell script using:
+The Setup1.bat file is a command script using:
 
 * WinGet to install java, intellij idea, android studio, etc
 * git to install CourseFiles510G, javasrc, Android-Cookbook-Examples
 * curl to download a few files
 * tar to extract bin, lib, Downloads, Maven
-* powershell SetPaths.ps1 to set the PATH for some programs that need it
 
 == Manual Steps
 
@@ -73,7 +77,7 @@ The following did not get automated. Please:
 
 * Set the home directory in whatever browser the students are using, to 
 
-	file://Users/Student/CourseFiles510G/web/index.html
+	file://Users/Student/CourseFiles510G/website/index.html
 
 == Summary
 
