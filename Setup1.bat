@@ -45,11 +45,16 @@ REM AndroidCookbookExamples - course author's open-source Android demos
 git clone https://github.com/IanDarwin/Android-Cookbook-Examples
 
 REM Course Problems and Solutions, and a few demos 
+git clone https://github.com/IanDarwin/makehandsons
+cd makehandsons
+mvn -DskipTests clean package install assembly:single
+mkinst-win.bat
+cd .
 git clone https://github.com/IanDarwin/CourseFiles510G
 REM Generating exercise files from solutions
-cd CourseFiles510G
+cd CourseFiles510G\sourcecode
 make
-cd ..
+cd ..\..
 
 REM Chapter 3 Expenses-server - from course author, to upload expenses for Expenses app  
 git clone https://github.com/IanDarwin/expenses-server
