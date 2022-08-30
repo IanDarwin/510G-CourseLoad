@@ -24,7 +24,6 @@ param(
 
 	if (!(Test-Path $Dir)) {
 		Write-warning "Supplied directory $Dir was not found!"
-#		return
 	}
 	$PATH = [Environment]::GetEnvironmentVariable("PATH", "Machine")
 	if ($PATH -notlike "*$Dir*" ) {
