@@ -35,7 +35,7 @@ flutter\flutter doctor
 Write-Host Tools used in preparing the course load
 Write-Host git (and bash shell) included in "git bash" package
 winget install --id Git.Git -e
-Write-Host Make (gnu-make) - 
+Write-Host "Make (gnu-make)"
 winget install --id GnuWin32.Make
 Write-Host mitmproxy for Chap 7
 winget install --id mitmproxy.mitmproxy
@@ -86,9 +86,6 @@ foreach ($path in $pathsArray)
 	Add-To-Path $path
 }
 
-Write-Host Task that must be done by hand (for now)
-Write-Host Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
-
 Write-Host Documentation
 Write-Host Android Internals book first edition, free download, Used with permission.
 Write-Host SEE http://newandroidbook.com/vault7.htm. 
@@ -121,6 +118,8 @@ delete  Tilde510G.tgz
 Write-Host "Tha-Tha-Tha-That's all folks!"
 
 Write-Host Remember there are a few manual steps needed, see the README.
+Write-Host "Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html"
+
 
 $Today = (Get-Date).DateTime
 Write-Host "Setup finished at" $Today
