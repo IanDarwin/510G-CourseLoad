@@ -23,15 +23,15 @@ param(
 )
 
 	if (!(Test-Path $Dir)) {
-		Write-warning "Supplied directory was not found!"
+		Write-warning "Supplied directory $Dir was not found!"
 		return
 	}
 	$PATH = [Environment]::GetEnvironmentVariable("PATH", "Machine")
-	if ($PATH -notlike "*"+$Dir+"*" ) {
+	if ($PATH -notlike "*$Dir*" ) {
 		[Environment]::SetEnvironmentVariable("PATH", "$PATH;$Dir", "Machine")
-		Write-Host "Added" $Dir
+		Write-Host "Added $Dir"
 	} else {
-		Write-warning $Dir + "already in path"
+		Write-warning "$Dir already in path"
 	}
 }
 
