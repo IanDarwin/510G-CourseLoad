@@ -6,9 +6,7 @@ This directory tries to automate the setup as much as possible.
 
 * In a PowerShell AS ADMIN window,  download the setpaths file:
 
-	Start-BitsTransfer \
-		-Destination SetPaths.ps1 \
-		-Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
+	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
 
 * In the same window, allow running unsigned P/S scripts:
 
