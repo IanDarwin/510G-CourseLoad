@@ -85,4 +85,12 @@ The following did not get automated. Please:
 
 The Setup1 script will stitch together all the files needed for the course.
 
-Comments/Questions?
+== Future Work
+
+It should be possible to do all of this with one script. It cannot be a .bat file because
+command.com sets a lenght of 1024 on PATH, which is way too little. 
+I wrestled with this for some hours, but am not a powershell expert and
+was not able to complete it. If somebody wants to try, clone the repo
+and checkout the merge-bat-and-ps branch, then pull all the changes into
+the two split files before manually fixing the merged script, and running
+it a couple of times to be sure it works. Good for someone with time on their hands.
