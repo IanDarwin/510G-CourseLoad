@@ -87,6 +87,10 @@ The Setup1 script will stitch together all the files needed for the course.
 
 == Future Work
 
+There should be a way to keep the versions in sync, between what's installed
+by setup1 and what's added to path. The "Merge" described below would make
+this much easier.
+
 It should be possible to do all of this with one script. It cannot be a .bat file because
 command.com sets a lenght of 1024 on PATH, which is way too little. 
 I wrestled with this for some hours, but am not a powershell expert and
