@@ -10,11 +10,11 @@ as part of an early exercise.
 
 == TO CONFIGURE A STUDENT MACHINE
 
-* In a PowerShell AS ADMIN window,  download the setpaths file:
+* Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
 
 	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
 
-* If the student logs in with a name other than 'student', edit the new file _Setup1.bat_ 
+* If the student logs in with a name other than 'student', edit the new file _SetPaths.ps1_
 and change globally, case-insensitively from _student_ to their name.
 
 * In the same window, allow running unsigned P/S scripts:
@@ -31,8 +31,8 @@ and change globally, case-insensitively from _student_ to their name.
 
 * We need some of the tools that are downloaded to be usable during the script.
 Thus you *must* start a *new* CMD window (Not even a new tab within WinTerm;
-must be a whole new process to get the PATH changes!). 
-In this new window, download the main setup script
+must be a whole new process to get the PATH changes we just made!). 
+In this new window, download the main setup script:
 
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
@@ -49,6 +49,7 @@ and change globally, case-insensitively from _student_ to their name.
 	.\Setup1.bat
 
 * Watch for errors. After the first machine completes OK, on subsequent machines you can come back when it's done. 
+It took about 15 minutes on a fast, lightly-loaded network when developing the script.
 Remember to complete the "manual steps" shown at the end of the output.
 
 == Structure
@@ -84,14 +85,16 @@ The Setup1.bat file is a command script using:
 
 == Manual Steps
 
-The following did not get automated. Please:
+The following did not get automated, sorry. Please:
 
 * Set the home directory in whatever browser the students are using, to 
 
-	file://Users/Student/CourseFiles510G/website/index.html
+	file:///C:/Users/student/CourseFiles510G/website/index.html
 
 
 == Future Work
+
+There is never going to be a Setup2.bat file, so we could rename the main file to setup.
 
 A few of the package installed annoyingly include the full version number, like _15.0.1.2-Stable-This-Week_,
 into the PATH, and we have to set those PATHs manually (hence, part of the work in _SetPaths.ps1_).
