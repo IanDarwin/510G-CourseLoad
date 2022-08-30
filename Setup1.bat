@@ -8,7 +8,7 @@ winget install --id Microsoft.WindowsTerminal
 REM Java JDK 11 LTS - needed for older releases 3rd-party apps
 winget install --id EclipseAdoptium.Temurin.11.JDK
 REM Java JDK 17 LTS - free from numerous OpenJDK download sites
-winget install --id EclipseAdoptium.Temurin.17.JDK
+winget install --id EclipseAdoptium.Temurin.17.JDK --version 17.0.4.8
 REM IntelliJ java-only install
 winget install --id JetBrains.IntelliJIDEA.Community
 REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains IntelliJ with extra plugins)
@@ -20,7 +20,7 @@ REM IGNORE warnings about missing command-line tools
 curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
 unzip flutter.zip
 del   flutter.zip
-flutter\flutter doctor
+flutter\bin\flutter doctor
 
 REM Tools used in preparing the course load
 REM Make (gnu-make) - 
@@ -32,7 +32,6 @@ winget install --id Insecure.Nmap
 
 echo Downloading maven build tool from https://maven.apache.org/download
 curl https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz | tar xzf -
-
 
 REM Documentation
 REM Android Internals book first edition, free download, Used with permission.

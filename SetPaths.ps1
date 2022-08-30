@@ -8,7 +8,7 @@ $Today = (Get-Date).DateTime
 Write-Host "SetPaths run on" $Today
 
 $pathsArray = 
-	"C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin",
+	"C:\Program Files\Eclipse Adoptium\jdk-17.0.4.8-hotspot\bin",
 	"C:\Users\student\apache-maven-3.8.6\bin",
 	"C:\Users\student\bin",
 	"C:\Users\student\AppData\Local\Android\Sdk\tools\bin",
@@ -16,6 +16,7 @@ $pathsArray =
 	"C:\Users\student\AppData\Local\Android\Sdk\platform-tools",
 	"C:\Users\student\flutter\bin",
 	"C:\Program Files (x86)\GnuWin32\bin"
+	"C:\Program Files (x86)\GnuWin32\bin
 
 function Add-To-Path{
 param(
