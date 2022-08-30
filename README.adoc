@@ -1,6 +1,12 @@
 = Course Setup for 510G Android
 
 This directory tries to automate the setup as much as possible.
+The scripting here hopes to stitch together all the files needed for the course.
+
+Note that some bits and pieces of Android Studio - like the Emulators and platform APIs - 
+cannot be downloaded automatically and must be downloaded by running Android Studio. We get the students to do this
+as part of an early exercise.
+
 
 == TO CONFIGURE A STUDENT MACHINE
 
@@ -33,13 +39,13 @@ and change globally, case-insensitively from _student_ to their name.
 
 * Unless you are sure that Git Bash (MinGW) is installed:
 
-	winget install --id Git.Git -e
+	winget install --id Git.Git 
 
 * Run the main script:
 
 	.\Setup1.bat
 
-* Watch for errors. After the first one, you can come back when it's done. 
+* Watch for errors. After the first machine completes OK, on subsequent machines you can come back when it's done. 
 Remember to complete the "manual steps" shown at the end of the output.
 
 == Structure
@@ -81,12 +87,11 @@ The following did not get automated. Please:
 
 	file://Users/Student/CourseFiles510G/website/index.html
 
-== Summary
-
-The Setup1 script will stitch together all the files needed for the course.
 
 == Future Work
 
+A few of the package installed annoyingly include the full version number, like _15.0.1.2-Stable-This-Week_,
+into the PATH, and we have to set those PATHs manually (hence, part of the work in _SetPaths.ps1_).
 There should be a way to keep the versions in sync, between what's installed
 by setup1 and what's added to path. The "Merge" described below would make
 this much easier.
