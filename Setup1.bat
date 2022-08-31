@@ -43,6 +43,8 @@ REM JavaSrc - course author's open-source Java demo package
 git clone https://github.com/IanDarwin/javasrc
 REM AndroidCookbookExamples - course author's open-source Android demos 
 git clone https://github.com/IanDarwin/Android-Cookbook-Examples
+REM AndroidTemplate
+git clone https://github.com/IanDarwin/AndroidTemplate
 
 REM Course Problems and Solutions, and a few demos 
 git clone https://github.com/IanDarwin/makehandsons
