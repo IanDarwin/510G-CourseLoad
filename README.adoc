@@ -88,7 +88,7 @@ The Setup1.bat file is a command script using:
 
 == Manual Steps
 
-The following did not get automated, sorry. Please:
+The following did not get automated, sorry. Please do the following after the scripts run:
 
 * Set the home directory in whatever browser the students are using, to 
 
@@ -99,15 +99,15 @@ The following did not get automated, sorry. Please:
 
 There is never going to be a Setup2.bat file, so we could rename the main file to setup.
 
-A few of the package installed annoyingly include the full version number, like _15.0.1.2-Stable-This-Week_,
-into the PATH, and we have to set those PATHs manually (hence, part of the work in _SetPaths.ps1_).
-There should be a way to keep the versions in sync, between what's installed
+A few of the packages that we install annoyingly include the full version number, like _15.0.1.2-Stable-This-Week_,
+into the PATH, and we have to set those PATHs manually (this is part of the work in _SetPaths.ps1_).
+There should be a way to keep the version numbers in sync as we upgrade this over time, between what's installed
 by setup1 and what's added to path. The "Merge" described below would make
 this much easier.
 
 It should be possible to do all of this with one script. It cannot be a .bat file because
 command.com sets a lenght of 1024 on PATH, which is way too little. 
-I wrestled with this for some hours, but am not a powershell expert and
+I wrestled with this merger attempt for some hours, but am not a powershell expert and
 was not able to complete it. If somebody wants to try, clone the repo
 and checkout the merge-bat-and-ps branch, then pull all the changes into
 the two split files before manually fixing the merged script, and running
