@@ -9,6 +9,20 @@ as part of an early exercise.
 
 == TO CONFIGURE A STUDENT MACHINE
 
+=== Assumptions
+
+We presume that:
+
+* The students log in as "student" on these machines
+* The student machines have Windows 10/11
+* The student machines have "winget" installed (it was optional on some early Win10).
+* The student machines have the git-bash (MinGW) package installed and on PATH
+* The student machines have recent Python *3* installed standardly (so that "pip install" will work).
+Note that this is not used or tested by the script but will be needed; I omitted it from the setup script
+on the grounds that LT student machines always seem to have Python installed.
+
+=== Steps
+
 * Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
 
 	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
@@ -30,7 +44,7 @@ and change globally, case-insensitively from _student_ to their name.
 
 * We need some of the tools that are downloaded by the script to be usable while the script is running.
 And they are only made available by the PATH changes in SetPaths.
-Therefore you *must* start a *new* CMD window (Not even a new tab within WinTerm;
+Therefore you *must* start a *new* CMD window at this point (Not even a new tab within WinTerm;
 must be a whole new process to get the PATH changes we just made!). 
 In this new window, download the main setup script:
 
@@ -51,6 +65,16 @@ and change globally, case-insensitively from _student_ to their name.
 * Watch for errors. Errors installing or building anything are probably bad news.
 However, issues during the long and chatty JavaScript stage towards the end do not matter.
 
+=== Manual Steps
+
+The following did not get automated, sorry. Please do the following after the scripts run:
+
+* Set the home directory in whatever browser the students are using, to 
+
+	file:///C:/Users/student/CourseFiles510G/website/index.html
+
+
+
 After the first machine completes OK, on subsequent machines you can come back when it's done. 
 It took about 15-30 minutes on a fast, lightly-loaded network when developing the script.
 Please remember to complete the "manual steps" shown at the end of the output.
@@ -69,31 +93,12 @@ to each student's directory:
 * javasrc - extra Java samples that we might refer to in response to questions
 * AndroidCookbookExamples - extra Android examples that might be used
 
-== Assumptions
-
-We presume that:
-
-* The students log in as "student" on these machines
-* The student machines have Windows 10/11
-* The student machines have "winget" installed (it was optional on some early Win10).
-* The student machines have the git-bash (MinGW) package installed and on PATH
-* The student machines have recent Python 3 installed standardly (so that "pip install" will work).
-
 The Setup1.bat file is a command script using:
 
 * WinGet to install java, intellij idea, android studio, etc
 * git to install CourseFiles510G, javasrc, Android-Cookbook-Examples
 * curl to download a few files
 * tar to extract bin, lib, Downloads, Maven
-
-== Manual Steps
-
-The following did not get automated, sorry. Please do the following after the scripts run:
-
-* Set the home directory in whatever browser the students are using, to 
-
-	file:///C:/Users/student/CourseFiles510G/website/index.html
-
 
 == Future Work
 
