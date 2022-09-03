@@ -66,6 +66,9 @@ mvn -f expenses-server/pom.xml compile
 REM Grand finale: download a tranche of files in non-git format
 curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
 
+REM Java Version - default should be 17, not 11
+java --version
+
 REM Tha-Tha-Tha-That's all folks!
 
 REM Remember there are a few manual steps needed, see the README.
