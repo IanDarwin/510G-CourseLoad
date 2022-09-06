@@ -11,6 +11,10 @@ REM Java JDK 11 LTS - needed for older releases 3rd-party apps
 winget install --id EclipseAdoptium.Temurin.11.JDK
 REM Java JDK 17 LTS - free from numerous OpenJDK download sites
 winget install --id EclipseAdoptium.Temurin.17.JDK --version 17.0.4.8
+REM Make sure we get a modern Java for use here
+PATH="C:\Program Files\Eclipse Adoptium\jdk-17.0.4.8-hotspot\bin";%PATH%
+java -version
+
 REM IntelliJ java-only install
 winget install --id JetBrains.IntelliJIDEA.Community
 REM Android Studio IDE (Ch03 to end) - free from Google (it's just JetBrains IntelliJ with extra plugins)
