@@ -34,7 +34,7 @@ and change globally, case-insensitively from _student_ to their name.
 
 	set-executionpolicy Unrestricted
 
-	You must accept the resulting prompt in the affirmative!
+You must accept the resulting prompt in the affirmative!
 
 . In the same window, run the script to set paths
 
