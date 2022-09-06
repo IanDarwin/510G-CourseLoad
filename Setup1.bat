@@ -11,6 +11,8 @@ REM Java JDK 11 LTS - needed for older releases 3rd-party apps
 winget install --id EclipseAdoptium.Temurin.11.JDK
 REM Java JDK 17 LTS - free from numerous OpenJDK download sites
 winget install --id EclipseAdoptium.Temurin.17.JDK --version 17.0.4.8
+REM Check what version of Java students will get - should be 17
+java -version
 REM Make sure we get a modern Java for use here
 PATH="C:\Program Files\Eclipse Adoptium\jdk-17.0.4.8-hotspot\bin";%PATH%
 java -version
