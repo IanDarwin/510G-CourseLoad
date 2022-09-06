@@ -16,11 +16,9 @@ winget install --id Google.AndroidStudio
 REM Android SDK, tools, emulators - downloaded when starting up Studio first time
 
 REM Flutter SDK - latest - from https://flutter.dev/
-REM IGNORE warnings about missing command-line tools
 curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
-C:\Program\ Files\Git\usr\bin\unzip.exe flutter.zip
+"C:\Program Files\Git\usr\bin\unzip.exe" flutter.zip > nul:
 del   flutter.zip
-flutter\bin\flutter doctor
 
 REM Tools used in preparing the course load
 REM Make (gnu-make) - 
