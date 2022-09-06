@@ -49,7 +49,7 @@ git clone https://github.com/IanDarwin/AndroidTemplate
 REM Course Problems and Solutions, and a few demos 
 git clone https://github.com/IanDarwin/makehandsons
 cd makehandsons
-mvn -DskipTests clean package install assembly:single
+CALL apache-maven-3.8.6\bin\mvn.cmd -DskipTests clean package install assembly:single
 CALL mkinst-win.bat
 cd ..
 git clone https://github.com/IanDarwin/CourseFiles510G
@@ -61,7 +61,7 @@ cd ..\..
 REM Chapter 3 Expenses-server - from course author, to upload expenses for Expenses app  
 git clone https://github.com/IanDarwin/expenses-server
 rem Pre-fetch a bunch ("half the internet") of dependencies for Spring-boot server
-mvn -f expenses-server/pom.xml compile
+CALL apache-maven-3.8.6\bin\mvn.cmd -f expenses-server/pom.xml compile
 
 REM Grand finale: download a tranche of files in non-git format
 curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
