@@ -18,7 +18,7 @@ REM Android SDK, tools, emulators - downloaded when starting up Studio first tim
 REM Flutter SDK - latest - from https://flutter.dev/
 REM IGNORE warnings about missing command-line tools
 curl -o flutter.zip https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip
-unzip flutter.zip
+C:\Program\ Files\Git\usr\bin\unzip.exe flutter.zip
 del   flutter.zip
 flutter\bin\flutter doctor
 
