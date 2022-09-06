@@ -48,8 +48,8 @@ REM Course Problems and Solutions, and a few demos
 git clone https://github.com/IanDarwin/makehandsons
 cd makehandsons
 mvn -DskipTests clean package install assembly:single
-mkinst-win.bat
-cd .
+CALL mkinst-win.bat
+cd ..
 git clone https://github.com/IanDarwin/CourseFiles510G
 REM Generating exercise files from solutions
 cd CourseFiles510G\sourcecode
