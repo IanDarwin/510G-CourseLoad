@@ -40,7 +40,8 @@ and change globally, case-insensitively from _student_ to their name.
 
 	cd ~
 	.\SetPaths.ps1
-	Note: this must be run, and succeed with only yellow or white outputs, no reds, else parts of the main script will fail
+
+Note: this must be run, and succeed with only yellow or white outputs, no reds, else parts of the main script will fail
 
 . We need some of the tools that are downloaded by the script to be usable while the script is running.
 And they are only made available by the PATH changes in SetPaths.
