@@ -23,56 +23,55 @@ on the grounds that LT student machines always seem to have Python installed.
 
 === Steps
 
-* Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
+. Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
 
 	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
 
-* If the student logs in with a name other than 'student', edit the new file _SetPaths.ps1_
+. If the student logs in with a name other than 'student', edit the new file _SetPaths.ps1_
 and change globally, case-insensitively from _student_ to their name.
 
-* In the same window, allow running unsigned P/S scripts:
+. In the same window, allow running unsigned P/S scripts:
 
 	set-executionpolicy Unrestricted
 
 	You must accept the resulting prompt in the affirmative!
 
-* In the same window, run the script to set paths
+. In the same window, run the script to set paths
 
 	cd ~
 	.\SetPaths.ps1
 	Note: this must be run, and succeed with only yellow or white outputs, no reds, else parts of the main script will fail
 
-* We need some of the tools that are downloaded by the script to be usable while the script is running.
+. We need some of the tools that are downloaded by the script to be usable while the script is running.
 And they are only made available by the PATH changes in SetPaths.
 Therefore you *must* start a *new* CMD window at this point (Not even a new tab within WinTerm;
 must be a whole new process to get the PATH changes we just made!). 
-In this new window, download the main setup script:
+*In this new window*, download the main setup script:
 
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
 
-* If the student logs in with a name other than 'student', edit the new file _Setup1.bat_ 
+. If the student logs in with a name other than 'student', edit the new file _Setup1.bat_ 
 and change globally, case-insensitively from _student_ to their name.
 
-* Unless you are sure that Git Bash (MinGW) is installed:
+. Unless you are sure that Git Bash (MinGW) is installed:
 
 	winget install --id Git.Git 
 
-* Run the main script:
+. Run the main script:
 
 	.\Setup1.bat
 
-* Watch for errors. Errors installing or building anything are probably bad news.
+. Watch for errors. Errors installing or building anything are probably bad news.
 However, issues during the long and chatty JavaScript stage towards the end do not matter.
 
 === Manual Steps
 
 The following did not get automated, sorry. Please do the following after the scripts run:
 
-* Set the home directory in whatever browser the students are using, to 
+. Set the home directory in whatever browser the students are using, to 
 
 	file:///C:/Users/student/CourseFiles510G/website/index.html
-
 
 
 After the first machine completes OK, on subsequent machines you can come back when it's done. 
