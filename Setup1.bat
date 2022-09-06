@@ -50,7 +50,8 @@ REM Course Problems and Solutions, and a few demos
 git clone https://github.com/IanDarwin/makehandsons
 cd makehandsons
 CALL apache-maven-3.8.6\bin\mvn.cmd -DskipTests clean package install assembly:single
-CALL mkinst-win.bat
+copy target\makehandsons-1.0-SNAPSHOT-jar-with-dependencies.jar %USERPROFILE%\lib\makehandsons.jar
+copy scripts\* %USERPROFILE%\bin
 cd ..
 git clone https://github.com/IanDarwin/CourseFiles510G
 REM Generating exercise files from solutions
