@@ -2,6 +2,8 @@ REM Androd Module: Installs Part One
 
 REM Make sure we start in ~
 cd %USERPROFILE%
+REM Create this early to avoid accidents
+mkdir bin
 
 REM Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
 winget install --id Microsoft.WindowsTerminal
