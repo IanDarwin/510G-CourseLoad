@@ -46,7 +46,10 @@ and change globally, case-insensitively from _student_ to their name.
 And they are only made available by the PATH changes in SetPaths.
 Therefore you *must* start a *new* CMD window at this point (Not even a new tab within WinTerm;
 must be a whole new process to get the PATH changes we just made!). 
-*In this new window*, download the main setup script:
+
+. *Switch to this new window for all the following steps!*
+
+. In this new window, download the main setup script:
 
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
