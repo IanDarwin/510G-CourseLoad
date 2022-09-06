@@ -23,34 +23,42 @@ on the grounds that LT student machines always seem to have Python installed.
 
 === Steps
 
-. Right click on _PowerShell_ and do _Run As Administrator_. In this window,  download the setpaths file:
+There are two scripts that must be downloaded. The directions below assume you didn't download a Zip of the 510G-CourseLoad project.
+If you did, you can of course skip the two "download" steps.
+
+. Right click on _PowerShell_ and do _Run As Administrator_. 
+
+. In this Admin Powershell window,  download the setpaths file:
 
 	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
 
 . If the student logs in with a name other than 'student', edit the new file _SetPaths.ps1_
 and change globally, case-insensitively from _student_ to their name.
 
-. In the same window, allow running unsigned P/S scripts:
+. In the powershell admin window, allow running unsigned P/S scripts:
 
 	set-executionpolicy Unrestricted
 
 You must accept the resulting prompt in the affirmative!
 
-. In the same window, run the script to set paths
+. In the same powershell window, run the script to set paths
 
 	cd ~
 	.\SetPaths.ps1
 
-Note: this must be run, and succeed with only yellow or white outputs, no reds, else parts of the main script will fail
+Note: If you get prompted with "Security Warning: Run only scripts that you trust...", respond with "R" for Run.
+
+Note: this script must run, and succeed with only yellow or white outputs, no reds, else parts of the main script will probably fail
 
 . We need some of the tools that are downloaded by the script to be usable while the script is running.
 And they are only made available by the PATH changes in SetPaths.
-Therefore you *must* start a *new* CMD window at this point (Not even a new tab within WinTerm;
+Therefore you *must* start a *new* "Command Prompt" window at this point (Not even a new tab within WinTerm;
 must be a whole new process to get the PATH changes we just made!). 
+This window does not need admin privs.
 
 . *Switch to this new window for all the following steps!*
 
-. In this new window, download the main setup script:
+. In the new "command prompt" window, download the main setup script:
 
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
@@ -62,7 +70,7 @@ and change globally, case-insensitively from _student_ to their name.
 
 	winget install --id Git.Git 
 
-. Run the main script:
+. Run the main script. This will take at least 15 minutes, maybe 30.
 
 	.\Setup1.bat
 
@@ -105,6 +113,9 @@ The Setup1.bat file is a command script using:
 == Future Work
 
 There is never going to be a Setup2.bat file, so we could rename the main file to setup.
+
+The source code should be built using Chris Mawata's build system, and all the JavaScript
+"errors"/warnings dealt with.
 
 A few of the packages that we install annoyingly include the full version number, like _15.0.1.2-Stable-This-Week_,
 into the PATH, and we have to set those PATHs manually (this is part of the work in _SetPaths.ps1_).
