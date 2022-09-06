@@ -77,7 +77,6 @@ The following did not get automated, sorry. Please do the following after the sc
 
 	file:///C:/Users/student/CourseFiles510G/website/index.html
 
-
 After the first machine completes OK, on subsequent machines you can come back when it's done. 
 It took about 15-30 minutes on a fast, lightly-loaded network when developing the script.
 Please remember to complete the "manual steps" shown at the end of the output.

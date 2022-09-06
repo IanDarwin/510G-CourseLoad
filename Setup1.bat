@@ -2,8 +2,8 @@ REM Androd Module: Installs Part One
 
 REM Make sure we start in ~
 cd %USERPROFILE%
-REM Create this early to avoid accidents
-mkdir bin
+REM Create these early to avoid accidents
+mkdir bin lib
 
 REM Windows Terminal - tabbed terminal with CTRL/C-CTRL-V
 winget install --id Microsoft.WindowsTerminal
@@ -69,7 +69,8 @@ curl https://darwinsys.com/tmp/Tilde510G.tgz | tar xzf -
 REM Java Version - default should be 17, not 11
 java --version
 
-REM Tha-Tha-Tha-That's all folks!
+@echo Tha-Tha-Tha-That's all folks!
 
-REM Remember there are a few manual steps needed, see the README.
-echo Set All Browser Home Pages to C:/Users/student/CourseFiles510G/website/index.html
+@echo Remember there are a few manual steps needed, see the README. Basically:
+@echo Set All Browser Home Pages to 
+@echo	file:///C:/Users/student/CourseFiles510G/website/index.html
