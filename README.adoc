@@ -59,9 +59,6 @@ This window does not need admin privs.
 	cd %USERPROFILE%
 	curl -O https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/Setup1.bat 
 
-. If the student logs in with a name other than 'student', edit the new file _Setup1.bat_ 
-and change globally, case-insensitively from _student_ to their name.
-
 . Unless you are sure that Git Bash (MinGW) is installed:
 
 	winget install --id Git.Git 
