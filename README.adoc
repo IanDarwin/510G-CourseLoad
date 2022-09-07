@@ -74,7 +74,7 @@ However, issues during the long and chatty JavaScript stage towards the end do n
 
 .. emulator is on PATH (_where emulator_ or _which emulator_ should give a long path with Android SDK)
 .. _java -version_ reports 17.x, not 11.x
-.. project folders got created, e.g., in CourseFiles510G/sourcecode, there are pairs
+.. project folders got created, e.g., in _CourseFiles510G/sourcecode_, there are pairs
 of folders, like _ex32solution_ and _ex32_, _ex21solution_ and _ex21_, etc.
 (the _exXX_ are genned from the _exXXsolution_ during the setup script;
 a few solutions won't have exercise folders but if the majority do, we're good).
@@ -85,7 +85,7 @@ The following did not get automated, sorry. Please do the following after the sc
 
 . Set the home directory in whatever browser the students are using, to 
 
-	file:///C:/Users/student/CourseFiles510G/website/index.html
+	file:///C:/Users/%USERNAME%/CourseFiles510G/website/index.html
 
 After the first machine completes OK, on subsequent machines you can come back when it's done. 
 It took about 15-30 minutes on a fast, lightly-loaded network when developing the script.
