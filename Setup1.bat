@@ -78,6 +78,6 @@ java --version
 
 @echo Tha-Tha-Tha-That's all folks!
 
-@echo Remember there are a few manual steps needed, see the README. Basically:
+@echo Remember there is one manual step needed:
 @echo Set All Browser Home Pages to 
-@echo	file:///C:/Users/student/CourseFiles510G/website/index.html
+@echo	file:///C:/Users/%USERNAME%/CourseFiles510G/website/index.html

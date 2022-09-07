@@ -9,12 +9,12 @@ Write-Host "SetPaths run on" $Today
 
 $pathsArray = 
 	"C:\Program Files\Eclipse Adoptium\jdk-17.0.4.8-hotspot\bin",
-	"C:\Users\student\apache-maven-3.8.6\bin",
-	"C:\Users\student\bin",
-	"C:\Users\student\AppData\Local\Android\Sdk\tools\bin",
-	"C:\Users\student\AppData\Local\Android\Sdk\emulator",
-	"C:\Users\student\AppData\Local\Android\Sdk\platform-tools",
-	"C:\Users\student\flutter\bin",
+	"C:\Users\$env:USERNAME\apache-maven-3.8.6\bin",
+	"C:\Users\$env:USERNAME\bin",
+	"C:\Users\$env:USERNAME\AppData\Local\Android\Sdk\tools\bin",
+	"C:\Users\$env:USERNAME\AppData\Local\Android\Sdk\emulator",
+	"C:\Users\$env:USERNAME\AppData\Local\Android\Sdk\platform-tools",
+	"C:\Users\$env:USERNAME\flutter\bin",
 	"C:\Program Files (x86)\GnuWin32\bin",
 	"C:\Program Files\Git\usr\bin"
 
