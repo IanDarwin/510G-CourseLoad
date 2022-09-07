@@ -71,8 +71,12 @@ This window does not need admin privs.
 However, issues during the long and chatty JavaScript stage towards the end do not matter.
 
 . VERIFY: Please check in the new window, that:
-	emulator is on PATH (where emulator should give a long path with Android SDK)
-	java -version reports 17.x, not 11.x
+
+.. emulator is on PATH (where emulator should give a long path with Android SDK)
+.. java -version reports 17.x, not 11.x
+.. project folders got created, e.g., in CourseFiles510G/sourcecode, there are pairs
+of folders, like ex32solution and ex32, ex21solution and ex21, etc.
+(the exXX are genned from the exXXsolution during the setup).
 
 === Manual Steps
 
