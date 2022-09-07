@@ -73,10 +73,11 @@ However, issues during the long and chatty JavaScript stage towards the end do n
 . VERIFY: Please check in the new window, that:
 
 .. emulator is on PATH (_where emulator_ or _which emulator_ should give a long path with Android SDK)
-.. java -version reports 17.x, not 11.x
+.. _java -version_ reports 17.x, not 11.x
 .. project folders got created, e.g., in CourseFiles510G/sourcecode, there are pairs
-of folders, like ex32solution and ex32, ex21solution and ex21, etc.
-(the exXX are genned from the exXXsolution during the setup script).
+of folders, like _ex32solution_ and _ex32_, _ex21solution_ and _ex21_, etc.
+(the _exXX_ are genned from the _exXXsolution_ during the setup script;
+a few solutions won't have exercise folders but if the majority do, we're good).
 
 === Manual Steps
 
