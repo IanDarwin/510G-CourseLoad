@@ -13,7 +13,6 @@ as part of an early exercise.
 
 We presume that:
 
-* The students log in as "student" on these machines
 * The student machines have Windows 10/11
 * The student machines have "winget" installed (it was optional on some early Win10).
 * The student machines have the git-bash (MinGW) package installed and on PATH
@@ -31,9 +30,6 @@ If you did, you can of course skip the two "download" steps.
 . In this Admin Powershell window,  download the setpaths file:
 
 	Start-BitsTransfer -Destination SetPaths.ps1 -Source https://raw.githubusercontent.com/IanDarwin/510G-CourseLoad/main/SetPaths.ps1
-
-. If the student logs in with a name other than 'student', edit the new file _SetPaths.ps1_
-and change globally, case-insensitively from _student_ to their name.
 
 . In the powershell admin window, allow running unsigned P/S scripts:
 
@@ -76,6 +72,10 @@ and change globally, case-insensitively from _student_ to their name.
 
 . Watch for errors. Errors installing or building anything are probably bad news.
 However, issues during the long and chatty JavaScript stage towards the end do not matter.
+
+. VERIFY: Please check in the new window, that:
+	emulator is on PATH (where emulator should give a long path with Android SDK)
+	java -version reports 17.x, not 11.x
 
 === Manual Steps
 
