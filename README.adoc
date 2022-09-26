@@ -87,7 +87,8 @@ The following did not get automated, sorry. Please do the following after the sc
 
 	file:///C:/Users/%USERNAME%/CourseFiles510G/website/index.html
 
-After the first machine completes OK, on subsequent machines you can come back when it's done. 
+You have to stay with the machine as there are a bunch of Microsoft Installer prompts;
+maybe these would go away if you ran the main setup under command prompt "as administrator"?
 It took about 15-30 minutes on a fast, lightly-loaded network when developing the script.
 Please remember to complete the "manual steps" shown at the end of the output.
 
